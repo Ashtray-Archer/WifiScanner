@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/menu_sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:id="@+id/grp_sort_field" android:checkableBehavior="single">
+                <item android:id="@+id/sort_signal" android:title="@string/sort_signal" android:checked="true" />
+                <item android:id="@+id/sort_ssid" android:title="@string/sort_ssid" />
+                <item android:id="@+id/sort_vendor" android:title="@string/sort_vendor" />
+                <item android:id="@+id/sort_channel" android:title="@string/sort_channel" />
+                <item android:id="@+id/sort_security" android:title="@string/sort_security" />
+                <item android:id="@+id/sort_bssid" android:title="@string/sort_bssid" />
+            </group>
+            <group android:id="@+id/grp_sort_dir" android:checkableBehavior="all">
+                <item android:id="@+id/sort_reverse" android:title="@string/sort_direction" />
+                <item android:id="@+id/sort_favorites_top" android:title="@string/sort_favorites_top" />
+                <item android:id="@+id/sort_open_only" android:title="@string/sort_open_only" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_export_csv"
+        android:icon="@drawable/ic_export"
+        android:title="@string/menu_export_csv"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_export_json"
+        android:title="@string/menu_export_json"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_theme"
+        android:title="@string/menu_theme"
+        app:showAsAction="never">
+        <menu>
+            <group android:id="@+id/grp_theme" android:checkableBehavior="single">
+                <item android:id="@+id/theme_system" android:title="@string/theme_system" />
+                <item android:id="@+id/theme_light" android:title="@string/theme_light" />
+                <item android:id="@+id/theme_dark" android:title="@string/theme_dark" />
+            </group>
+            <group android:id="@+id/grp_accent" android:checkableBehavior="single">
+                <item android:id="@+id/accent_blue" android:title="@string/accent_blue" />
+                <item android:id="@+id/accent_green" android:title="@string/accent_green" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+</menu>

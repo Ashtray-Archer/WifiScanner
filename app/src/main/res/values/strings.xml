@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFi Scanner</string>
+
+    <string name="scan">Scan</string>
+    <string name="scanning">Scanning…</string>
+    <string name="stop">Stop</string>
+    <string name="rescan">Rescan</string>
+
+    <string name="scanning_title">Scanning nearby Wi-Fi…</string>
+    <string name="scanning_subtitle">Discovering access points around you…</string>
+    <string name="scanning_live">Live · %1$d networks found</string>
+    <string name="stopped_summary">%1$d networks · %2$d open</string>
+
+    <string name="menu_sort">Sort by</string>
+    <string name="menu_export_csv">Export CSV</string>
+    <string name="menu_export_json">Export JSON</string>
+    <string name="menu_theme">Theme</string>
+    <string name="menu_about">About</string>
+
+    <string name="sort_signal">Signal strength</string>
+    <string name="sort_ssid">Name (SSID)</string>
+    <string name="sort_vendor">Vendor</string>
+    <string name="sort_channel">Channel</string>
+    <string name="sort_security">Security</string>
+    <string name="sort_bssid">BSSID</string>
+    <string name="sort_direction">Reverse order</string>
+    <string name="sort_favorites_top">Favorites at top</string>
+    <string name="sort_open_only">Open networks only</string>
+
+    <string name="favorite">Favorite</string>
+    <string name="unfavorite">Remove favorite</string>
+    <string name="favorite_no_mac">Can\'t favorite: no BSSID available for this network</string>
+
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <string name="accent_blue">Ocean blue (default)</string>
+    <string name="accent_green">Terminal green</string>
+
+    <string name="empty_title">No networks yet</string>
+    <string name="empty_subtitle">Turn on Wi-Fi and tap Scan to discover nearby access points.</string>
+
+    <string name="no_wifi">This device has no Wi-Fi adapter.</string>
+    <string name="wifi_off">Wi-Fi is off — turn it on to scan.</string>
+</resources>

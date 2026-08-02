@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light theme palette (Ocean blue) -->
+    <color name="brand">#1668E3</color>
+    <color name="brand_dark">#0F4FB0</color>
+    <color name="accent">#06B6D4</color>
+    <color name="text_on_brand">#FFFFFF</color>
+
+    <!-- Terminal-green scheme -->
+    <color name="brand_green">#0B8F3F</color>
+    <color name="brand_green_dark">#06642B</color>
+    <!-- Neutral (non-blue) surfaces so green has real contrast -->
+    <color name="bg_green">#F2F4F2</color>
+    <color name="surface_green">#FFFFFF</color>
+    <color name="surface_variant_green">#E9ECE9</color>
+    <color name="divider_green">#DEE3DE</color>
+
+    <color name="bg">#F4F6FB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#EEF2F9</color>
+    <color name="surface_elevated">#FFFFFF</color>
+
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+
+    <color name="divider">#E2E8F0</color>
+    <color name="header_bg">#E8EDF7</color>
+    <color name="row_alt">#F8FAFD</color>
+
+    <!-- OPEN (unsecured) network badge -->
+    <color name="badge_open">#DC2626</color>
+
+    <!-- Signal-strength colours -->
+    <color name="signal_strong">#16A34A</color>
+    <color name="signal_good">#65A30D</color>
+    <color name="signal_fair">#D97706</color>
+    <color name="signal_weak">#DC2626</color>
+
+    <!-- Favorite star -->
+    <color name="favorite">#F5A623</color>
+    <color name="favorite_disabled">#CBD2DD</color>
+
+    <color name="white">#FFFFFF</color>
+</resources>
