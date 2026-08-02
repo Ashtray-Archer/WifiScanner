@@ -2,6 +2,9 @@
 
 A fast, private Android app for discovering and reviewing nearby Wi-Fi access points.
 
+Latest release: **v1.1** · see [CHANGELOG.md](CHANGELOG.md) ·
+[download the signed APK](https://github.com/PortableDiag/WifiScanner/releases/latest)
+
 Scans continuously, updates live, and lists every access point around you with its
 name, MAC address, manufacturer, signal strength, channel, band and security — then
 stores the last scan for review and lets you export it.
@@ -57,3 +60,7 @@ keyPassword=…
 Without those, the build still produces an unsigned/debuggable APK.
 
 - **minSdk** 26 · **targetSdk** 35 · Java 17
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for release history.
