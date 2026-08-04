@@ -3,6 +3,23 @@
 All notable changes to WiFi Scanner are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [Unreleased]
+
+### Documentation
+- README: documented the per-network action sheet (copy BSSID/SSID, share, web
+  search) and the shared export/persistence format, which were shipped in 1.0 but
+  never written down.
+- README: added a **Limitations** section covering the platform scan-rate cap, the
+  fact that discovered access points accumulate for the session rather than ageing
+  out, hidden SSIDs, multi-BSSID mesh and multi-band routers, what the vendor field
+  actually identifies, and the cache-directory lifetime of exports.
+- README: recorded *why* `ACCESS_FINE_LOCATION` is required — `NEARBY_WIFI_DEVICES`
+  with `neverForLocation` alone is refused by `getScanResults()` — and that the
+  device Location toggle must be on independently of the permission grant.
+- README: pinned the full toolchain (Gradle 8.11.1, AGP 8.7.3, build-tools 34.0.0).
+
+No app code changed, so there is no version bump.
+
 ## [1.1] - 2026-08-02
 
 ### Added
