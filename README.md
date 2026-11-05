@@ -28,8 +28,8 @@ stores the last scan for review and lets you export it.
 - **Store & export** — the last scan is saved on-device and reloaded on next launch;
   export any scan to CSV or JSON via the share sheet. Both use the same JSON format,
   so an exported file and a saved session are interchangeable.
-- **Two themes** — Ocean blue (default) and Terminal green, each with light / dark
-  variants that follow the system or a manual override.
+- **Charcoal default** — fixed neutral surfaces with an optional green accent.
+  Existing mode preferences are retained; application surfaces remain charcoal.
 
 All scanning happens locally on the device. The app never uses or transmits your
 location — Android only requires the location permission to *return* Wi-Fi scan

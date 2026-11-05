@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Version29.Theme.WifiScanner" parent="Version27.Theme.WifiScanner">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Theme.WifiScanner" parent="Version29.Theme.WifiScanner" />
+</resources>

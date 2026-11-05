@@ -65,7 +65,7 @@
                     android:paddingVertical="2dp"
                     android:background="@drawable/bg_badge"
                     android:backgroundTint="@color/badge_open"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/charcoal_background"
                     android:textSize="10sp"
                     android:textStyle="bold"
                     android:letterSpacing="0.04"

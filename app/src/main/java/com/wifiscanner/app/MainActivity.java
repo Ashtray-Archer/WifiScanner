@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
-        applyTheme(prefs.getInt(K_THEME, 0));
+        applyTheme(prefs.getInt(K_THEME, 2));
         super.onCreate(savedInstanceState);
         if (prefs.getInt(K_ACCENT, 0) == 1) setTheme(R.style.Theme_WifiScanner_Green);
         setContentView(R.layout.activity_main);
@@ -171,9 +171,11 @@ public class MainActivity extends AppCompatActivity {
         // works on devices that route it through the nearby-devices permission.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             return new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_COARSE_LOCATION,
                     Manifest.permission.NEARBY_WIFI_DEVICES};
         }
-        return new String[]{Manifest.permission.ACCESS_FINE_LOCATION};
+        return new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION};
     }
 
     private boolean hasScanPermissions() {
@@ -315,7 +317,7 @@ public class MainActivity extends AppCompatActivity {
         if (favTop != null) favTop.setChecked(adapter.isFavoritesOnTop());
         MenuItem openOnly = menu.findItem(R.id.sort_open_only);
         if (openOnly != null) openOnly.setChecked(adapter.isOpenOnly());
-        int theme = prefs.getInt(K_THEME, 0);
+        int theme = prefs.getInt(K_THEME, 2);
         int[] tIds = {R.id.theme_system, R.id.theme_light, R.id.theme_dark};
         if (theme >= 0 && theme < tIds.length) {
             MenuItem ti = menu.findItem(tIds[theme]);

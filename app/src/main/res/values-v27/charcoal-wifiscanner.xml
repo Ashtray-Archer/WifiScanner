@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Version27.Theme.WifiScanner" parent="Base.Theme.WifiScanner">
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Theme.WifiScanner" parent="Version27.Theme.WifiScanner" />
+</resources>
