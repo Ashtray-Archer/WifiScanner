@@ -25,3 +25,11 @@ The shared and Material3-specific window attributes now use actual API27/29/31
 resource inheritance, preserving the API26 floor and full lint checks. The
 seven canonical files are required by the updated copy guard; absent version
 files are rejected. Current APK/test/lint qualification must rerun on this head.
+
+The versioned shared and app-specific resources remove all seven NewApi errors.
+The remaining inherited lint failure is the Android12 fine/coarse request pair.
+Declare and request COARSE alongside the already-required FINE permission;
+retain the existing precise-permission gate for Wi-Fi scan-result access and the
+existing denied/approximate-only UI. No location API is added or called.
+Lint remains enabled. Reference:
+https://developer.android.com/develop/sensors-and-location/location/permissions/runtime.

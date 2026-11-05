@@ -171,9 +171,11 @@ public class MainActivity extends AppCompatActivity {
         // works on devices that route it through the nearby-devices permission.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             return new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_COARSE_LOCATION,
                     Manifest.permission.NEARBY_WIFI_DEVICES};
         }
-        return new String[]{Manifest.permission.ACCESS_FINE_LOCATION};
+        return new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION};
     }
 
     private boolean hasScanPermissions() {
