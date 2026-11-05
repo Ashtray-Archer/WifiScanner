@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.WifiScanner" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/brand</item>
-        <item name="colorOnPrimary">@color/text_on_brand</item>
+    <style name="Theme.WifiScanner" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/charcoal_focus</item>
+        <item name="colorOnPrimary">@color/charcoal_background</item>
         <item name="colorPrimaryContainer">@color/brand</item>
         <item name="colorOnPrimaryContainer">@color/text_on_brand</item>
         <item name="colorSecondary">@color/accent</item>
-        <item name="colorOnSecondary">@color/text_on_brand</item>
+        <item name="colorOnSecondary">@color/charcoal_background</item>
         <item name="colorSurface">@color/surface</item>
         <item name="colorOnSurface">@color/text_primary</item>
         <item name="colorSurfaceVariant">@color/surface_variant</item>
@@ -19,6 +19,14 @@
         <item name="android:statusBarColor">@color/brand_dark</item>
         <item name="android:navigationBarColor">@color/bg</item>
         <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowSplashScreenBackground">@color/charcoal_background</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:textColorPrimary">@color/charcoal_text_states</item>
+        <item name="android:textColorSecondary">@color/charcoal_secondary</item>
+        <item name="android:textColorHighlight">@color/charcoal_selection</item>
+        <item name="colorError">@color/charcoal_error</item>
+        <item name="colorOnError">@color/charcoal_background</item>
 
         <item name="popupMenuStyle">@style/Widget.WifiScanner.PopupMenu</item>
         <item name="materialButtonStyle">@style/Widget.WifiScanner.Button</item>
@@ -28,7 +36,7 @@
     <style name="Theme.WifiScanner.Green" parent="Theme.WifiScanner">
         <item name="colorPrimary">@color/brand_green</item>
         <item name="colorPrimaryContainer">@color/brand_green</item>
-        <item name="colorOnPrimaryContainer">@color/text_on_brand</item>
+        <item name="colorOnPrimaryContainer">@color/charcoal_background</item>
         <item name="colorSecondary">@color/brand_green</item>
         <item name="colorSurface">@color/surface_green</item>
         <item name="colorSurfaceVariant">@color/surface_variant_green</item>
@@ -49,7 +57,7 @@
          Parent is Light here and Dark in values-night/themes.xml so the popup
          surface matches the active mode; color overrides reference DayNight
          resources. -->
-    <style name="ThemeOverlay.WifiScanner.PopupMenu" parent="ThemeOverlay.Material3.Light">
+    <style name="ThemeOverlay.WifiScanner.PopupMenu" parent="ThemeOverlay.Material3.Dark">
         <item name="android:colorBackground">@color/surface_elevated</item>
         <item name="colorSurface">@color/surface_elevated</item>
         <item name="colorOnSurface">@color/text_primary</item>
@@ -61,6 +69,8 @@
 
     <style name="Widget.WifiScanner.Button" parent="Widget.Material3.Button">
         <item name="cornerRadius">14dp</item>
+        <item name="backgroundTint">@color/charcoal_interactive</item>
+        <item name="android:textColor">@color/charcoal_text_states</item>
     </style>
 
     <style name="Toolbar.WifiScanner" parent="Widget.Material3.Toolbar">
