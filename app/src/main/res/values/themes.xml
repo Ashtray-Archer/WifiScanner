@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.WifiScanner" parent="Theme.Material3.Dark.NoActionBar">
+    <style name="Base.Theme.WifiScanner" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/charcoal_focus</item>
         <item name="colorOnPrimary">@color/charcoal_background</item>
         <item name="colorPrimaryContainer">@color/brand</item>
@@ -19,9 +19,6 @@
         <item name="android:statusBarColor">@color/brand_dark</item>
         <item name="android:navigationBarColor">@color/bg</item>
         <item name="android:windowLightStatusBar">false</item>
-        <item name="android:windowLightNavigationBar">false</item>
-        <item name="android:windowSplashScreenBackground">@color/charcoal_background</item>
-        <item name="android:forceDarkAllowed">false</item>
         <item name="android:textColorPrimary">@color/charcoal_text_states</item>
         <item name="android:textColorSecondary">@color/charcoal_secondary</item>
         <item name="android:textColorHighlight">@color/charcoal_selection</item>
@@ -31,6 +28,8 @@
         <item name="popupMenuStyle">@style/Widget.WifiScanner.PopupMenu</item>
         <item name="materialButtonStyle">@style/Widget.WifiScanner.Button</item>
     </style>
+
+    <style name="Theme.WifiScanner" parent="Base.Theme.WifiScanner" />
 
     <!-- Terminal-green variant: green brand on neutral black/white surfaces. -->
     <style name="Theme.WifiScanner.Green" parent="Theme.WifiScanner">

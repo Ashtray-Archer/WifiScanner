@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Version31.Theme.WifiScanner" parent="Version29.Theme.WifiScanner">
+        <item name="android:windowSplashScreenBackground">@color/charcoal_background</item>
+    </style>
+    <style name="Theme.WifiScanner" parent="Version31.Theme.WifiScanner" />
+</resources>
